@@ -64,9 +64,9 @@ static constexpr uint16_t COLOR_LIGHT = TFT_GOLD;
 
 /* ============ HELPERS ============ */
 static uint16_t getMetricColor(float score) {
-    if (score >= 80.0f) return TFT_GREEN;
-    if (score >= 60.0f) return TFT_YELLOW;
-    if (score >= 40.0f) return 0xFB00;  /* 255,  96,   0 */
+    if (score >= 80.0f) { return TFT_GREEN; }
+    if (score >= 60.0f) { return TFT_YELLOW; }
+    if (score >= 40.0f) { return 0xFB00;  /* 255,  96,   0 */ }
     return TFT_RED;
 }
 

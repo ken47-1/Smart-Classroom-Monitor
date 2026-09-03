@@ -75,13 +75,15 @@ void ComfortScore::get_individual_scores(float temp, float humid, float lux,
 ComfortLevel ComfortScore::get_level(float score) {
     if (score >= LEVEL_EXCELLENT) {
         return {ComfortStatus::EXCELLENT, "Excellent", TFT_GREEN};
-    } else if (score >= LEVEL_COMFORTABLE) {
-        return {ComfortStatus::COMFORTABLE, "Comfortable", TFT_GREEN};
-    } else if (score >= LEVEL_FAIR) {
-        return {ComfortStatus::FAIR, "Fair", TFT_YELLOW};
-    } else if (score >= LEVEL_POOR) {
-        return {ComfortStatus::POOR, "Poor", 0xFB00};  /* 255,  96,   0 */
-    } else {
-        return {ComfortStatus::UNCOMFORTABLE, "Uncomfortable", TFT_RED};
     }
+    if (score >= LEVEL_COMFORTABLE) {
+        return {ComfortStatus::COMFORTABLE, "Comfortable", TFT_GREEN};
+    }
+    if (score >= LEVEL_FAIR) {
+        return {ComfortStatus::FAIR, "Fair", TFT_YELLOW};
+    }
+    if (score >= LEVEL_POOR) {
+        return {ComfortStatus::POOR, "Poor", 0xFB00};  /* 255,  96,   0 */
+    }
+    return {ComfortStatus::UNCOMFORTABLE, "Uncomfortable", TFT_RED};
 }
