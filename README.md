@@ -140,6 +140,8 @@ Smart-Classroom-Comfort-Monitor/
 │   │   └── bh1750.cpp
 │   ├── comfort_score.cpp
 │   └── main.cpp
+├── tools/
+│   └── screenshot_capture.py
 └── README.md
 ```
 
