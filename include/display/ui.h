@@ -61,17 +61,17 @@ private:
     static const GFXfont* const FONT_CARD_LBL;
     static const GFXfont* const FONT_CARD_VAL;
 
-	/* --------- Cached Metrics --------- */
-	int _headerH;
-	int _comfortLabelH;
-	int _comfortValueH;
-	int _cardLabelH;
-	int _cardValueH;
+    /* --------- Cached Metrics --------- */
+    int _headerH;
+    int _comfortLabelH;
+    int _comfortValueH;
+    int _cardLabelH;
+    int _cardValueH;
 
-	/* --------- Cached Layout --------- */
-	int _headerTop;
-	int _headerAreaH;
-	int _dividerY;
+    /* --------- Cached Layout --------- */
+    int _headerTop;
+    int _headerAreaH;
+    int _dividerY;
 
     /* --------- State --------- */
     DisplayManager& _display;
