@@ -1,5 +1,7 @@
 # Smart Classroom Comfort Monitor
 
+*This project was developed with AI-assisted code generation and human oversight.*
+
 Firmware for an ESP32-based environmental monitoring system that measures temperature, humidity, pressure, and light levels, calculates a comfort score, and displays the results on a TFT screen.
 
 This is a student project developed for a PBL (Project-Based Learning) course at school. The system uses an ESP32 microcontroller with BME280 and BH1750 sensors to provide real-time environmental feedback in a classroom setting.
